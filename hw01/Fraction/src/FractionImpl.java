@@ -23,14 +23,26 @@ public class FractionImpl implements Fraction {
 
     }
 
+    /**
+     * Get the numerator of the fraction.
+     * @return the numerator of the fraction
+     */
     public int getNumerator() {
         return numerator;
     }
 
+    /**
+     * Setter for the numerator of the fraction.
+     * @param numerator value
+     */
     public void setNumerator(int numerator) {
         this.numerator = numerator;
     }
 
+    /**
+     * Get the denominator of the fraction.
+     * @return the denominator of the fraction.
+     */
     public int getDenominator() {
         return denominator;
     }
