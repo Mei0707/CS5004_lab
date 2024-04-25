@@ -1,0 +1,87 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    text-align: center;
+}
+
+.elevator-shaft {
+    width: 100px; /* Adjust as needed */
+    height: 500px; /* Adjust as needed */
+    background-color: #ccc;
+    position: relative;
+}
+
+.elevator {
+    width: 100%;
+    height: 100px; /* Adjust as needed */
+    background-color: #007bff;
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 18px;
+    overflow: hidden; /* Hide overflow to prevent door from overflowing */
+}
+
+.alarm, .door {
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.door-wrapper {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.door {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('door-pattern.jpg'); /* Add door pattern image */
+    transition: width 0.5s ease, opacity 0.5s ease; /* Add transition for smooth door animation */
+}
+
+.options button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+}
+
+#elevator-form {
+    margin-top: 20px;
+}
+
+#elevator-form label {
+    margin-right: 10px;
+}
+
+#elevator-form input {
+    padding: 5px;
+    margin-right: 10px;
+}
+
+.hidden {
+    display: none;
+}
